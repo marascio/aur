@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pkgs=(gtest quantlib quantlib-python quickfix git-publish-branch)
+pkgs=(gtest quantlib quantlib-python quickfix git-publish-branch aws-iam)
 aurp=$(type -P aurploader)
 files=()
 
