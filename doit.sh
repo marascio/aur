@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-pkgs=(gtest quantlib quantlib-python quickfix git-publish-branch aws-iam)
+#pkgs=(gtest quantlib quantlib-python quickfix git-publish-branch aws-iam)
+pkgs=(aws-iam)
 aurp=$(type -P aurploader)
 files=()
 
@@ -12,7 +13,7 @@ build()
     for i in ${pkgs[@]}; do
         mkdir -p $i
         cd $i
-        cp "../../$i/PKGBUILD" .
+        cp ../../$i/* .
         makepkg -f
         makepkg -f --source
         cd ..
