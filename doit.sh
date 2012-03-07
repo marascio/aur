@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #pkgs=(gtest quantlib quantlib-python quickfix git-publish-branch aws-iam)
-pkgs=(mnc)
+pkgs=(aws-iam)
 aurp=$(type -P aurploader)
 files=()
 
